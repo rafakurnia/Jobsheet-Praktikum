@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bagian 19 </title>
+</head>
+<body>
+    
+    <h1>Bagian 19</h1>
+    <!-- Kontrol UI -->
+    <div class="controls" style="margin-bottom: 20px; display: flex; gap: 10px;">
+        <input type="text" id="search-input" placeholder="Cari produk...">
+
+        <select id="category-select">
+            <option value="all">Semua Kategori</option>
+            <option value="laptops">Laptops</option>
+            <option value="phones">Phones</option>
+            <option value="audio">Audio</option>
+            <option value="tablets">Tablets</option>
+            <option value="wearables">Wearables</option>
+            <option value="accessories">Accessories</option>
+            <option value="monitors">Monitors</option>
+        </select>
+
+        <select id="sort-select">
+            <option value="default">Urutkan: Bawaan</option>
+            <option value="price-asc">Harga: Termurah</option>
+            <option value="price-desc">Harga: Termahal</option>
+        </select>
+    </div>
+
+
+    <!-- Tempat produk dirender -->
+    <div id="product-list"></div>
+    <script src="19.js"></script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce Dashboard</title>
+</head>
+<body>
+    <div class="controls" style="margin-bottom: 15px; display: flex; gap: 10px;">
+        <input type="text" id="search-input" placeholder="Cari produk...">
+        
+        <select id="category-select">
+            <option value="all">Semua Kategori</option>
+            <option value="laptops">Laptops</option>
+            <option value="phones">Phones</option>
+            <option value="audio">Audio</option>
+            <option value="tablets">Tablets</option>
+            <option value="accessories">Accessories</option>
+        </select>
+
+        <select id="sort-select">
+            <option value="default">Urutkan: Bawaan</option>
+            <option value="price-asc">Harga: Termurah</option>
+            <option value="price-desc">Harga: Termahal</option>
+        </select>
+    </div>
+
+    <!-- Container Utama -->
+    <div id="product-list"></div>
+
+    <script src="script.js" defer></script>
+</body>
+</html>

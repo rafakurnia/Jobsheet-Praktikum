@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<title>Product Explorer</title>
+
+</head>
+<body>
+<div class="container">
+  <h1>Product Explorer</h1>
+
+  <div class="controls">
+    <input id="search-input" type="text" placeholder="Cari produk...">
+    <select id="category-filter">
+      <option value="all">Semua Kategori</option>
+    </select>
+    <select id="sort-select">
+      <option value="none">Urutkan: Default</option>
+      <option value="price-asc">Harga: Rendah ke Tinggi</option>
+      <option value="price-desc">Harga: Tinggi ke Rendah</option>
+      <option value="rating">Rating Tertinggi</option>
+      <option value="title">Judul (A-Z)</option>
+    </select>
+  </div>
+
+  <div id="status-area"></div>
+  <div id="product-grid" class="grid"></div>
+
+  <h2>Statistik</h2>
+  <div id="stats-area"></div>
+
+  <h2>Analitik per Kategori</h2>
+  <div id="category-area"></div>
+</div>
+
+<!-- type="module" WAJIB supaya import/export ES Modules berfungsi -->
+<script type="module" src="main.js"></script>
+</body>
+</html>
